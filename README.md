@@ -1,30 +1,33 @@
-# Personal Expense Manager
+# Менеджер особистих витрат (Personal Expense Manager)
 
-A web application for tracking personal expenses, built from specific markdown requirements.
+[👉 **Спробувати застосунок (Live Demo)**](https://TimurBerezovskiy.github.io/personal-expense-manager-BEREXOSKY-TIMUR-CK-41/)
 
-## Features
-- **Add, Edit, Delete Expenses**: Full CRUD operations.
-- **Categorization**: Sort expenses into predefined categories (Food, Transport, Education, Health, Entertainment, Shopping, Other).
-- **Filtering**: View expenses by specific category or date range.
-- **Budgeting Limits**: Set limits for individual categories and get warnings when limits are exceeded.
-- **Persistence**: All data is securely stored in your browser's local storage.
-- **Liquid Glass Design**: Premium and modern user interface utilizing glassmorphism aesthetics.
+Вебзастосунок для обліку, збереження та контролю особистих витрат, розроблений згідно з вимогами навчального курсу.
 
-## Technology Stack
-- **Frontend**: Vanilla HTML5, CSS3, JavaScript (ES6+).
-- **Storage**: `localStorage` (No backend required).
-- **Hosting**: GitHub Pages.
+## 🌟 Основний функціонал
+*   **Управління витратами (CRUD):** Додавання, перегляд, редагування та видалення витрат.
+*   **Категоризація:** Розподіл витрат за категоріями (Їжа, Транспорт, Освіта, Здоров'я, Розваги, Покупки, Інше).
+*   **Гнучка фільтрація:** Сортування витрат за конкретною категорією або діапазоном дат.
+*   **Бюджетні ліміти:** Встановлення лімітів для кожної категорії з автоматичним візуальним сповіщенням у разі їх перевищення.
+*   **Візуальна аналітика:** Інтерактивна кругова діаграма для швидкої оцінки витрат.
+*   **Збереження даних:** Усі дані безпечно зберігаються локально у браузері (`localStorage`), не потребуючи серверної частини.
+*   **Сучасний дизайн:** Преміальний UI у стилі "Liquid Glass" (скломорфізм) з повноцінною підтримкою Світлої 🌞 та Темної 🌙 тем.
 
-## Deployment to GitHub Pages
-Since the app relies entirely on frontend technologies, it is ready to be hosted natively on GitHub Pages. 
-To deploy:
-1. Push this code to the `main` branch.
-2. The included GitHub Action workflow `.github/workflows/deploy-pages.yml` will automatically build and deploy the root directory to GitHub Pages.
+## 🛠 Технологічний стек
+*   **Frontend:** HTML5, CSS3, Vanilla JavaScript (ES6+).
+*   **Зберігання даних:** `localStorage` (браузерне сховище).
+*   **Сторонні бібліотеки:** `Chart.js` (лише для графіків, без фреймворків).
+*   **Хостинг:** автоматичний деплой через GitHub Pages (CI/CD).
 
-## Development & Usage
-- **Running Locally**: Simply open `index.html` in your browser. No build steps or servers are required.
-- **Demo Data**: Use the "Reset Demo Data" button in the app header to instantly load sample expenses and limits to explore the features.
+## 🚀 Як запустити локально
+Оскільки застосунок побудований виключно на клієнтських технологіях, процес запуску максимально простий:
+1. Склонуйте цей репозиторій або завантажте ZIP-архів.
+2. Відкрийте файл `index.html` у вашому браузері.
+3. Щоб одразу побачити, як усе працює, натисніть кнопку **"Завантажити демо"** у шапці сайту.
 
-## Architecture & Requirements Document
-- Requirements can be found in `requirements/Requirements.md`.
-- Software Design Record (SDR) can be found in `docs/sdr/SDR.md`.
+## 📄 Архітектура та Документація
+Проект містить детальну технічну документацію та архітектурні рішення (SDR), які були прийняті під час розробки, щоб гарантувати відповідність бізнес-правилам:
+*   [Технічні вимоги (Requirements)](./requirements/Requirements.md)
+*   [Вибір стеку технологій (SDR-0001)](./docs/sdr/0001-stack-choice.md)
+*   [Вибір способу зберігання даних (SDR-0002)](./docs/sdr/0002-client-storage-choice.md)
+*   [Роутинг та модель даних (SDR-0003)](./docs/sdr/0003-routing-state-and-data-model.md)
